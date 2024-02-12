@@ -1,0 +1,263 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing:border-box;
+text-decoration: none;
+list-style: none;
+font-weight: 600;
+color: #fff;
+}
+
+
+header{
+width: 100% ;
+padding: 10px 7%;
+
+border-bottom: 1px solid #333;
+display: flex;
+justify-content: space-between;
+align-items: center;
+ color:#fff;
+position: fixed;
+background-color:rgba(0, 0, 0, .8);
+
+z-index: 999;
+
+}
+
+.extra{
+    display:flex;
+ gap: 30px;
+    align-items: center;
+   
+} 
+
+.navmenu{
+    display: none;
+    font-size: 28px;
+}
+nav{
+width: 100%;
+position: relative;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+   
+  
+    display :flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header ul li{
+   
+    margin-left: 25px;
+}
+
+header ul li a{
+ color:#fff;
+    border-radius: 10px;
+    padding: 8px 12px;
+    transition: all .3s ease;
+}
+
+header ul li a.active, a:hover{
+    background-color: #70493b;
+    
+      
+}
+
+
+.home{
+    width: 100%;
+   height: 100vh;
+    background-image: url(img/hero1.jpg);
+ 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.home::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 30%;
+    width: 100%;
+background: linear-gradient(0deg, rgb(70, 57, 30) 0%, rgba(255, 255, 255, 0) 70%) ;
+bottom: 0;
+}
+
+.hero-conten{
+padding:  1.4rem 7%;
+max-width: 50rem;
+
+
+
+}
+
+.hero-conten h2{
+    font-size: 4em;
+    line-height: 1;
+    text-shadow: 0 5px 5px rgb(0, 0, 0);
+
+}
+
+.hero-conten p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.6rem;
+       text-shadow: 0 8px 5px rgb(0, 0, 0);
+
+}
+button{
+    margin-top: 35px;
+    padding: 10px 25px;
+    background-color: rgb(211, 133, 16);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.tentangKami,
+.kontak{
+    width: 100%;
+
+    height: 100vh;
+    background-color:rgb(70, 57, 30);
+    
+    
+}
+
+
+.tentangKami h2,
+.menu h2,
+.kontak h2{
+    text-align: center ;
+    padding: 4rem 0 1rem 0;
+}
+.abaout-content{
+        display: flex;
+    gap: 20px;
+    padding:0 7%;
+
+}
+.abaout-content img{
+    flex: 1;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}
+.abaout-content p{
+    text-indent: 35px;
+    text-align: justify;
+    
+}
+.menu{
+
+    background-color:rgb(70, 57, 30);
+}
+.menu .menu-content{
+     padding:0 7%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.kontak p, .menu p{
+    text-align: center;
+    margin: auto;
+   font-weight: 100;
+   line-height: 1.6;
+   max-width: 450px;
+   padding: 0 0 20px 0;
+}
+
+.menu-card img{
+    width: 200px;
+    border-radius: 100px;
+
+}
+
+.kontak-containt{
+        display: flex;
+    gap: 20px;
+
+    
+    
+    
+}
+
+
+.mapp{
+  
+        background-color: rgb(34, 28, 16);
+flex: 1 1 45rem;
+}
+form{
+     padding: 2rem;
+    background-color: rgb(34, 28, 16);
+flex: 1 1 45rem;
+text-align: center;
+}
+.input-group{
+    margin: 20px 0;
+}
+
+footer{
+   padding: 12px;
+  background-color: rgb(34, 28, 16);
+  text-align: center;
+}
+
+@media (max-width:768px) {
+    .abaout-content{
+        flex-wrap: wrap;
+        padding: 1rem 7%;
+    }
+    .navmenu{
+        display: block;
+    }
+    .kontak-containt{
+        flex-wrap: wrap;
+    }
+    header ul{
+        width: 300px;
+        height: 100vh;
+        position: absolute;
+      top: 140%;
+ right:-109% ;
+background-color:rgba(0, 0, 0, .8);
+    display :inline-block ;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .5s ease;
+}
+header ul.active{
+top:130%;
+right: -10%;
+}
+
+header ul li{
+   padding: 1.5rem;
+    text-align: center;
+}
+header ul li a{
+    
+    color: #fff;
+}
+
+}
